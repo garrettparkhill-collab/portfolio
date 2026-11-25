@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: teal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: orange;
+    padding: 20px;
+}
+
+h1 {
+    color: darkred;
+    font-size: 48px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: darkred;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+#about {
+    color: darkblue;
+    background-color: lightblue;
+}
+
+#projects {
+    color: darkgreen;
+    background-color: lightgreen;
+}
+
+#contact {
+    color: darkgoldenrod;
+    background-color: lightyellow;
+}
+
+footer {
+    background-color: darkgray;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.button {
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: darkblue;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 250px;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project-card .button {
+    margin-top: auto;
+    align-self: center;
+}
+
+@media (max-width:600px) {
+    header {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    main {
+        padding: 10px;
+    }
+    section {
+        padding: 10px;
+    }
+}
