@@ -1,57 +1,52 @@
-/*Style 1
+/*Style 1: Navy Blue and Gold
 :root {
-    --color-bg: #f4f4f5;
-    --color-accent: #b91c1c;
+    --color-bg: #f7f6f2;
     --color-surface: #ffffff;
-    --color-header: #18181b;
-    --color-footer: #18181b;
-    --color-text: #27272a;
-    --color-mutedtext: #71717a;
-    --color-accenthover:#7f1d1d;
+    --color-dark: #1b2a41;
+    --color-text: #1f2933;
+    --color-mutedtext: #6b7280;
+    --color-accent: #1e4e8c;
+    --color-accenthover: #163a6b;
+    --color-highlight: #d4a72c;
 }*/
 
-/*Style 2
+/*Style 2: Plum and Mint
 :root {
-    --color-bg: #f4f4f5;
-    --color-accent: #b91c1c;
+    --color-bg: #f6f3fa;
     --color-surface: #ffffff;
-    --color-header: #18181b;
-    --color-footer: #18181b;
-    --color-text: #27272a;
-    --color-mutedtext: #71717a;
-    --color-accenthover:#7f1d1d;
-}*/
-
-/*Style 3
-:root {
-    --color-bg: #f4f4f5;
-    --color-accent: #b91c1c;
-    --color-surface: #ffffff;
-    --color-header: #18181b;
-    --color-footer: #18181b;
-    --color-text: #27272a;
-    --color-mutedtext: #71717a;
-    --color-accenthover:#7f1d1d;
+    --color-dark: #2a1b3d;
+    --color-text: #2a2235;
+    --color-mutedtext: #6e6680;
+    --color-accent: #5b3f8c;
+    --color-accenthover: #452f6b;
+    --color-lavender: #c9b8e8;
+    --color-mint: #7fdb8b5;
 }*/
 
 /*original color scheme*/
 :root {
     --color-bg: #f4f4f5;
-    --color-accent: #b91c1c;
     --color-surface: #ffffff;
     --color-header: #18181b;
     --color-footer: #18181b;
     --color-text: #27272a;
     --color-mutedtext: #71717a;
+    --color-accent: #b91c1c;
     --color-accenthover:#7f1d1d;
+    --color-navhover: #f87171;
+    --color-highlight: #b91c1c;
+    --color-highlightproject: #d4a72c;
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: var(--color-bg);
     font-family: 'Inter', sans-serif;
     margin: 0;
     line-height: 1.6;
+}
+
+header h1 {
+    color: var(--color-surface);
 }
 
 header {
@@ -85,7 +80,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--color-accent);
+    color: var(--color-navhover);
 }
 
 main {
@@ -99,21 +94,9 @@ section {
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 10px 8px rgba(0, 0, 0 , 0.1);
-}
-
-#about {
-    color: var(--color-mutedtext);
-    background-color: var(--color-surface);
-}
-
-#projects {
-    color: var(--color-mutedtext);
-    background-color: var(--color-surface);
-}
-
-#contact {
-    color: var(--color-mutedtext);
-    background-color: var(--color-surface);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    border-top: 3px solid var(--color-highlight);
 }
 
 footer {
@@ -121,7 +104,6 @@ footer {
     color: var(--color-surface);
     padding: 10px;
     text-align: center;
-    border: 2px solid black;
 }
 
 .button {
@@ -150,9 +132,10 @@ footer {
     display: flex;
     flex-direction: column;
     flex: 1 1 250px;
-    background-color: var(--color-surface);
+    background-color: var(--color-bg);
     padding: 20px;
     border-radius: 10px;
+    border-top: 3px solid var(--color-highlightproject);
 }
 
 .project-card .button {
