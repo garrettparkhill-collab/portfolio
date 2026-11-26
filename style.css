@@ -1,6 +1,57 @@
+/*Style 1
+:root {
+    --color-bg: #f4f4f5;
+    --color-accent: #b91c1c;
+    --color-surface: #ffffff;
+    --color-header: #18181b;
+    --color-footer: #18181b;
+    --color-text: #27272a;
+    --color-mutedtext: #71717a;
+    --color-accenthover:#7f1d1d;
+}*/
+
+/*Style 2
+:root {
+    --color-bg: #f4f4f5;
+    --color-accent: #b91c1c;
+    --color-surface: #ffffff;
+    --color-header: #18181b;
+    --color-footer: #18181b;
+    --color-text: #27272a;
+    --color-mutedtext: #71717a;
+    --color-accenthover:#7f1d1d;
+}*/
+
+/*Style 3
+:root {
+    --color-bg: #f4f4f5;
+    --color-accent: #b91c1c;
+    --color-surface: #ffffff;
+    --color-header: #18181b;
+    --color-footer: #18181b;
+    --color-text: #27272a;
+    --color-mutedtext: #71717a;
+    --color-accenthover:#7f1d1d;
+}*/
+
+/*original color scheme*/
+:root {
+    --color-bg: #f4f4f5;
+    --color-accent: #b91c1c;
+    --color-surface: #ffffff;
+    --color-header: #18181b;
+    --color-footer: #18181b;
+    --color-text: #27272a;
+    --color-mutedtext: #71717a;
+    --color-accenthover:#7f1d1d;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: teal;
+    background-color: var(--color-bg);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.6;
 }
 
 header {
@@ -8,12 +59,16 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    background-color: orange;
+    background-color: var(--color-header);
     padding: 20px;
 }
 
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--color-accent);
+}
+
 h1 {
-    color: darkred;
     font-size: 48px;
 }
 
@@ -23,13 +78,14 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--color-surface);
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.2s ease;
 }
 
 nav a:hover {
-    color: darkred;
+    color: var(--color-accent);
 }
 
 main {
@@ -42,43 +98,46 @@ section {
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0 , 0.1);
 }
 
 #about {
-    color: darkblue;
-    background-color: lightblue;
+    color: var(--color-mutedtext);
+    background-color: var(--color-surface);
 }
 
 #projects {
-    color: darkgreen;
-    background-color: lightgreen;
+    color: var(--color-mutedtext);
+    background-color: var(--color-surface);
 }
 
 #contact {
-    color: darkgoldenrod;
-    background-color: lightyellow;
+    color: var(--color-mutedtext);
+    background-color: var(--color-surface);
 }
 
 footer {
-    background-color: darkgray;
+    background-color: var(--color-footer);
+    color: var(--color-surface);
     padding: 10px;
     text-align: center;
     border: 2px solid black;
 }
 
 .button {
-    background-color: darkred;
-    color: white;
+    background-color: var(--color-accent);
+    color: var(--color-surface);
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
+    transition: background-color 0.2s ease;
 }
 
 .button:hover {
-    background-color: darkblue;
+    background-color: var(--color-accenthover);
 }
 
 .project-grid {
@@ -91,7 +150,7 @@ footer {
     display: flex;
     flex-direction: column;
     flex: 1 1 250px;
-    background-color: lightgray;
+    background-color: var(--color-surface);
     padding: 20px;
     border-radius: 10px;
 }
