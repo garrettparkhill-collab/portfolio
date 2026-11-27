@@ -46,6 +46,10 @@
 }
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color-bg);
     font-family: 'Inter', sans-serif;
@@ -60,6 +64,9 @@ header {
     gap: 20px;
     background-color: var(--color-dark);
     padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index:10;
 }
 
 header h1 {
@@ -108,6 +115,7 @@ section {
     color: var(--color-text);
     background-color: var(--color-surface);
     border-top: 3px solid var(--color-highlight);
+    scroll-margin-top:202px;
 }
 
 footer {
@@ -226,17 +234,24 @@ footer {
 @media (max-width:600px) {
     header {
         flex-direction: column;
+        position: static;
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 25px;
     }
 
     main {
-        padding: 10px;
+        padding: 7px;
     }
 
     section {
         padding: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
     }
 }
