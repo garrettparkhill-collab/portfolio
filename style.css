@@ -68,7 +68,8 @@ header h1 {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Oswald', sans-serif;
     color: var(--color-accent);
 }
@@ -146,6 +147,7 @@ footer {
     padding: 20px;
     border-radius: 10px;
     border-top: 2px solid var(--color-highlightproject);
+    text-align: left;
 }
 
 .project-card .button {
@@ -180,6 +182,28 @@ footer {
 
 .social-links i {
     font-size: 30px;
+}
+
+.tags {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tags li {
+    background-color: var(--color-highlight);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.planned {
+    border-top-style: dashed;
 }
 
 @media (max-width:600px) {
