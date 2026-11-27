@@ -247,6 +247,7 @@ footer {
 
     section {
         padding: 10px;
+        scroll-margin-top: 0;
     }
 }
 
