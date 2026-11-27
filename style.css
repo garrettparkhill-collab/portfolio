@@ -160,6 +160,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .social-links a {
@@ -168,12 +169,13 @@ footer {
     gap: 8px;
     color: var(--color-accent);
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 
 }
 
 .social-links a:hover {
-    color: var(--color-accenthover);
+    color: var(--color-navhover);
+    transform: translateY(-3px);
 }
 
 .social-links i {
