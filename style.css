@@ -134,15 +134,14 @@ footer {
 }
 
 .project-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
-    flex: 1 1 250px;
     background-color: var(--color-bg);
     padding: 20px;
     border-radius: 10px;
@@ -182,6 +181,24 @@ footer {
 
 .social-links i {
     font-size: 30px;
+}
+
+.text-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: flex-start;
+    color: var(--color-accent);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.text-link:hover {
+    color: var(--color-accenthover);
+    transform: translateY(-3px);
+}
+
+.text-link i {
+    font-size: 20px;
 }
 
 .tags {
