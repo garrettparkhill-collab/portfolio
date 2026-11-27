@@ -12,6 +12,7 @@
     --color-highlight: #d4a72c;
     --color-highlightproject: #d4a72c;
 }
+    */
 
 /*Style 2: Plum and Mint*/
 
@@ -40,10 +41,10 @@
     --color-accent: #b91c1c;
     --color-accenthover:#7f1d1d;
     --color-navhover: #f87171;
-    --color-highlight: #f8717c;
+    --color-highlight: #f87171;
     --color-highlightproject: #d4a72c;
 }
-*/  
+*/
 
 body {
     background-color: var(--color-bg);
@@ -65,7 +66,9 @@ header h1 {
     color: var(--color-surface);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     color: var(--color-accent);
 }
@@ -100,7 +103,7 @@ section {
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
-    box-shadow: 0 10px 8px rgba(0, 0, 0 , 0.1);
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
     color: var(--color-text);
     background-color: var(--color-surface);
     border-top: 3px solid var(--color-highlight);
@@ -150,16 +153,46 @@ footer {
     align-self: center;
 }
 
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+}
+
+.social-links a:hover {
+    color: var(--color-accenthover);
+}
+
+.social-links i {
+    font-size: 30px;
+}
+
 @media (max-width:600px) {
     header {
         flex-direction: column;
     }
+
     h1 {
         font-size: 32px;
     }
+
     main {
         padding: 10px;
     }
+
     section {
         padding: 10px;
     }
