@@ -239,11 +239,17 @@ footer {
     font-size: 18px;
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 #theme-toggle {
     background: none;
     border: none;
     color: var(--color-navhover);
-    font-size: large;
+    font-size: 20px;
     cursor: pointer;
 }
 
