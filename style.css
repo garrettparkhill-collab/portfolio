@@ -44,7 +44,7 @@ header {
     align-items: center;
     gap: 20px;
     background-color: var(--color-dark);
-    padding: 20px;
+    padding: 12px 24px;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -52,6 +52,9 @@ header {
 
 header h1 {
     color: var(--color-navhover);
+    margin: 0;
+    line-height: 1.2;
+    font-size: 36px;
 }
 
 h1,
@@ -100,7 +103,7 @@ section {
     color: var(--color-text);
     background-color: var(--color-surface);
     border-top: 3px solid var(--color-highlight);
-    scroll-margin-top: 180px;
+    scroll-margin-top: 80px;
 }
 
 footer {
