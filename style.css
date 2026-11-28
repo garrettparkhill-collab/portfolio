@@ -1,21 +1,3 @@
-/*Style 1: Navy Blue and Gold*/
-/*
-:root {
-    --color-bg: #f7f6f2;
-    --color-surface: #ffffff;
-    --color-dark: #1b2a41;
-    --color-text: #1f2933;
-    --color-mutedtext: #6b7280;
-    --color-accent: #1e4e8c;
-    --color-accenthover: #163a6b;
-    --color-navhover: #d4a72c;
-    --color-highlight: #d4a72c;
-    --color-highlightproject: #d4a72c;
-}
-    */
-
-/*Style 2: Plum and Mint*/
-
 :root {
     --color-bg: #f6f3fa;
     --color-surface: #ffffff;
@@ -27,24 +9,23 @@
     --color-navhover: #7fd8b5;
     --color-highlight: #c9b8e8;
     --color-highlightproject: #7fd8b5;
+    --color-ondark: #ffffff;
 }
 
-
-/*original color scheme*/
-/*
-:root {
-    --color-bg: #f4f4f5;
-    --color-surface: #ffffff;
-    --color-dark: #18181b;
-    --color-text: #27272a;
-    --color-mutedtext: #71717a;
-    --color-accent: #b91c1c;
-    --color-accenthover:#7f1d1d;
-    --color-navhover: #f87171;
-    --color-highlight: #f87171;
-    --color-highlightproject: #d4a72c;
+/*Dark Theme for Plum and Mint*/
+[data-theme="dark"] {
+    --color-bg: #1a1225;
+    --color-surface: #251a33;
+    --color-dark: #120c1a;
+    --color-text: #ece6f5;
+    --color-mutedtext: #a99fbb;
+    --color-accent: #b9a3e3;
+    --color-accenthover: #d4c6f0;
+    --color-navhover: #7fd8b5;
+    --color-highlight: #5b3f8c;
+    --color-highlightproject: #7fd8b5;
+    --color-ondark: #ffffff;
 }
-*/
 
 html {
     scroll-behavior: smooth;
@@ -91,7 +72,7 @@ nav {
 }
 
 nav a {
-    color: var(--color-surface);
+    color: var(--color-ondark);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.2s ease;
@@ -124,7 +105,7 @@ section {
 
 footer {
     background-color: var(--color-dark);
-    color: var(--color-surface);
+    color: var(--color-ondark);
     padding: 10px;
     text-align: center;
 }
@@ -256,6 +237,14 @@ footer {
     text-align: left;
     margin: 0 auto;
     font-size: 18px;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    color: var(--color-navhover);
+    font-size: large;
+    cursor: pointer;
 }
 
 @media (max-width:600px) {
